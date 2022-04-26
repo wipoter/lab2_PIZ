@@ -10,15 +10,17 @@ function myFunction() {
         SexStr = document.getElementById('Female').value;
     }
 
-
     let CountryStr = document.getElementById("country").value;
     let fullTextStr = document.getElementById("FullText").value;
+
     var Full = (loginStr + '\n' + pasStr + '\n' + SexStr + '\n' + CountryStr + '\n' + fullTextStr );
+
     console.log(loginStr);
     console.log(pasStr);
     console.log(SexStr);
     console.log(CountryStr);
     console.log(fullTextStr);
+
     var w = window.open('index2.html');
     w.myVariable = Full;
 }

@@ -4,346 +4,339 @@
     <meta charset="UTF-8">
     <title>Chess 21</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <script ></script>
+    <script></script>
 </head>
 <body>
-<table class = "mainT">
+<table class="mainT">
     <tr>
         <td class="first">
-            <div class="enterForm">
-
+            <form action="index2.html" method="get">
                 <label><b>Login</b></label>
-                    <input id="Name" type="text" size="70"  pattern="[a-z]">
-
-
+                <input name="Name" id="Name" type="text">
                 <label><b>Password</b></label>
-                    <input id="Pas" type="password" size="40" pattern="[a-z]">
-<br>
-                <label><b>Sex</b></label>
-                    <div class="SexR">
-                        <input type="radio" class="radio" name="Sex" value="Male" id="Male" />
-                        <label for="Male">Male</label>
-                        <input type="radio" class="radio" name="Sex" value="Female" id="Female" />
-                        <label for="Female">Female</label>
-                    </div>
+                <input name="Pas" id="Pas" type="password">
                 <br>
-                <select id="country" name="country">
+                <label><b>Sex</b></label>
+                <div class="SexR">
+                    <input type="radio" class="radio" name="Sex" value="Male" id="Male"/>
+                    <label for="Male">Male</label>
+                    <input type="radio" class="radio" name="Sex" value="Female" id="Female"/>
+                    <label for="Female">Female</label>
+                </div>
+                <br>
+                <select id="Country" name="Country">
                     <option value="Ukraine">Ukraine</option>
                     <option value="Poland">Poland</option>
                     <option value="Grate Britain">Grate Britain</option>
                     <option value="USA">USA</option>
                     <option value="Australia">Australia</option>
                     <option value="Italy">Italy</option>
-                </select>
-                <textarea id="FullText"></textarea>
-                <br>
-                <button onclick="myFunction()">Send</button>
-                <script src="script.js"></script>
-            </div>
-
+                </select> <br> <br>
+                <textarea name="FullText" id="FullText"></textarea>
+                <br> <br>
+                <button type="submit" value="Submit">Submit</button>
+                <!--<button onclick="myFunction()">Send</button>
+                <script src="script.js"></script>-->
+            </form>
         </td>
-        <div class="borderChess">
+        <td>
+        <table class="secondT">
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">1</div>
+                        <div class="image"><img src="image/kingW" alt="White King"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">2</div>
+                        <div class="image"><img src="image/PawnsW" alt="White Pawn"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/RookW" alt="White Rook"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">3</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/BishopB" alt="Black bishop"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
 
-            <td>
-                <table class="secondT">
-                    <tr>
-                        <td>
-                            <div class="white">
-                                <div class="number">1</div>
-                                <div class="image"><img src="image/kingW" alt="White King"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="black">
-                                <div class="number">2</div>
-                                <div class="image"><img src="image/PawnsW" alt="White Pawn"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="image"><img src="image/RookW" alt="White Rook"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="white">
-                                <div class="number">3</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="image"><img src="image/BishopB" alt="Black bishop"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">4</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="white">
+                            <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">5</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="black">
-                                <div class="number">4</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="white">
-                                    <div class="image"><img src="image/PawnsW" alt="White Pawns"></div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="white">
-                                <div class="number">5</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">6</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="white">
+                            <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/BishopW" alt="White Bishop"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">7</div>
+                        <div class="image">
+                            <img src="image/PawnsB" alt="Black Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/RookB" alt="Black Rook"></div>
+                    </div>
+                </td>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="black">
-                                <div class="number">6</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="white">
-                                    <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/BishopW" alt="White Bishop"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="white">
-                                <div class="number">7</div>
-                                <div class="image">
-                                    <img src="image/PawnsB" alt="Black Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="image"><img src="image/PawnsB" alt="Black Pawns"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black"></div>
-                        </td>
-                        <td>
-                            <div class="white"></div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="image"><img src="image/RookB" alt="Black Rook"></div>
-                            </div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="black">
-                                <div class="number">8</div>
-                                <div class="letters">H</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="letters">G</div>
-                                <div class="image">
-                                    <img src="image/KingB" alt="Black King">
-                                </div>
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">8</div>
+                        <div class="letters">H</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">G</div>
+                        <div class="image">
+                            <img src="image/KingB" alt="Black King">
+                        </div>
 
 
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="letters">F</div>
-                                <div class="image">
-                                    <img src="image/RookB" alt="Black Rook">
-                                </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">F</div>
+                        <div class="image">
+                            <img src="image/RookB" alt="Black Rook">
+                        </div>
 
 
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="letters">E</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="letters">D</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="letters">C</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="black">
-                                <div class="letters">B</div>
-                                <div class="image">
-                                    <img src="image/RookB" alt="Black Rook">
-                                </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">E</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">D</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">C</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">B</div>
+                        <div class="image">
+                            <img src="image/RookB" alt="Black Rook">
+                        </div>
 
 
-                            </div>
-                        </td>
-                        <td>
-                            <div class="white">
-                                <div class="letters">A</div>
-                                <div class="image">
-                                    <img src="image/BishopB" alt="Black bishop">
-                                </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">A</div>
+                        <div class="image">
+                            <img src="image/BishopB" alt="Black bishop">
+                        </div>
 
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-        </div>
-        <br>
-        </td>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </tr>
+    </td>
 </table>
 <div class="links">
     <a href="https://www.chess.com/puzzles/problem/109540">Link to Puzzle</a>
